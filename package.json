@@ -1,6 +1,6 @@
 {
   "name": "train_lstm_brain",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Train a brain.js LSTM on text.",
   "main": "index.js",
   "scripts": {
