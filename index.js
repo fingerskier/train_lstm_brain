@@ -43,7 +43,7 @@ module.exports = function(netFile, dataFile, startLine) {
   fs.writeFileSync(netFile, JSON.stringify(lstm.toJSON()))
 
   for (let data of trainingData) {
-    const words = data.split(' ')[0]
+    const words = data.split(' ')
     const testPhrase = words[0] + ' ' + words[1]
     console.log('run:', testPhrase, lstm.run(testPhrase))
   }
